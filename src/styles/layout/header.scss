@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Delius|Montserrat&display=swap');
+@import "../variables";
+
+nav#mainNav {
+    background: $main_bg;
+    position: fixed;
+    display:flex;
+    width : 100%;
+    a.navbar-brand {
+        color: #ffffff;
+        font-size: 2rem;
+        padding-left: 2rem;
+        font-weight: bold;
+        top: 0;
+        font-family: 'Delius', cursive;
+        justify-content: flex-start;
+        span {
+            display: block;
+            font-size: 1.5rem;
+            line-height: 1rem;
+        }
+    }
+
+    #navbarSupportedContent {
+        height: 6rem;
+        font-size: 14px;
+        justify-content: flex-end;
+
+        a.nav-link {
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+
+            &.active {
+                border-bottom: 3px solid #ffffff;
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Delius|Montserrat&display=swap");
+@import "../variables";
+
+#skills {
+  h1 {
+    text-align: center;
+  }
+
+  .skills-block {
+    padding: 1rem;
+
+    .progress-circle {
+      text-align: center;
+
+      .circular-chart {
+        display: inline-block;
+        margin: 1rem auto;
+        width: 12rem;
+      }
+
+      .circle {
+        stroke: $main_bg;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        animation: progress 1s ease-out forwards;
+      }
+
+      div.percentage {
+        position: absolute;
+        font-size: 2rem;
+        color: #416694;
+        font-weight: bold;
+        line-height: 14rem;
+        left: calc(50% - 2rem);
+      }
+
+      label {
+        color: $font_gray;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: 1rem 0;
+        font-weight: 600;
+        display: block;
+      }
+    }
+  }
+
+  .download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    font-size: 25px;
+    font-weight: bold;
+    color: $font_gray;
+    cursor: pointer;
+    label {
+      margin-bottom: -10px;
+    }
+  }
+
+  .anime-container {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+
+@keyframes progress {
+  0% {
+      stroke-dasharray: 0 100;
+  }
+}
+

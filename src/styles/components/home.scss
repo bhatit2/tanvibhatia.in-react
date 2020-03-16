@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Delius|Montserrat&display=swap');
+@import "../variables";
+
+#home {
+    background-color: $main_bg;
+    background: url('../../assets/img/cover.png') no-repeat;
+    background-size: contain;
+    height: 49.3rem;
+    margin-top:5rem;
+    color: #ffffff;
+    font-family: 'Delius', cursive;
+    padding: 0.5rem 4rem;
+
+    .image-container {
+        position: relative;
+        min-height: 30rem;
+    }
+
+    h2 {
+        font-size: $size-xl;
+        letter-spacing: -5px;
+    }
+
+    h3 {
+        font-size: $size-l;
+    }
+
+    .main-intro {
+        font-size: $size-m;
+    }
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Delius|Montserrat&display=swap');
+@import "../variables";
+
+
+#about {
+    .myPic {
+        width: 85%;
+        height: 81%;
+        border-radius: 50%;
+        border: 12px solid #867a7a;
+        padding: 0;
+        float: right;
+        margin-right: 2rem;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../../assets/img/myPic.jpg');
+    }
+
+    .separator {
+        height: 3px;
+        background: lightgray;
+        margin: 2rem 4rem;
+    }
+
+    .img-card {
+        text-align: -webkit-center;
+        margin:2rem 0;
+        .pic {
+            width: 5rem;
+            height: 5rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            &.experience {
+                background-image: url('../../assets/svg/calendar.svg');
+            }
+
+            &.loc {
+                background-image: url('../../assets/svg/code.svg');
+            }
+
+            &.project {
+                background-image: url('../../assets/svg/project-board.svg');
+            }
+        }
+
+        label {
+            font-size: 3rem;
+            color: $main_bg;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .subtext {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: $font_gray;
+        }
+    }
+}
+
+.card {
+    background-color: #ffffff;
+}
+
+.card-body {
+    padding: 7rem 3rem;
+}
+
+h1.section-title {
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    color: $font_gray;
+}
+
+p.desc {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+
+    i {
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: $main_bg;
+        font-style: normal;
+        display: block;
+        margin-bottom: 1rem;
+    }
+}
